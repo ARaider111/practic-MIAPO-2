@@ -14,6 +14,14 @@ def Multiplication():
     b = float(input("Введите второе число: "))
     print(f"Результат: {a} * {b} = {a * b}")
 
+def Division():
+    a = float(input("Введите первое число: "))
+    b = float(input("Введите второе число: "))
+    if b == 0:
+        print("Ошибка: деление на ноль невозможно.")
+    else:
+        print(f"Частное: {a} / {b} = {a / b}")
+
 def PrintMenu():
     print("\n--- Главное меню ---")
     print("1. Сложение")
@@ -33,6 +41,8 @@ def main():
             Subtraction()
         elif num == '3':
             Multiplication()
+        elif num == '3':
+            Division()
         elif num == '0':
             print("Выход из программы.")
             break
